@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif ;
+}
+
+
+body{
+    background-color: #F3F5FC;
+}
+
+.logo{
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+    
+}
+main{
+    width: 100%;
+    height: 90%;
+}
+.contenedorCaja{
+    position: absolute;
+    padding-left: 240px;
+    width: 680px;
+    height: 288px;
+    top: 168px;
+}
+.cajaText{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: left;
+    cursor: pointer;
+}
+.cajaText::placeholder{
+    color: #0A3871;
+}
+.alert{
+    position: absolute;
+    width: 252px;
+    height:18px;
+    top: 851px;
+    padding-left: 240px;
+    color: #495057;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    display: flex;
+    gap: 8px;
+}
+.cajaBotones{
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    top: 885px;
+    padding-left: 240px;
+    display: flex;
+    justify-content: space-around;
+    gap:24px;
+}
+.botonEncriptar{
+    width: 328px;
+    height:67px;
+    padding: 24px ;
+    gap: 8px;
+    border-radius: 24px ;
+    background-color: #0A3871;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    border: 1px solid ;
+    cursor: pointer;     
+}
+
+
+
+.botonDesencriptar{
+    width: 328px;
+    height:67px;
+    padding: 24px ;
+    gap: 8px;
+    border-radius: 24px ;
+    background-color: #F3F5FC;
+    border-color:#0A3871;
+    border: 1px solid;
+    color: #0A3871 ;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;   
+    cursor: pointer;  
+}   
+
+
+.contenedorMuñeco{
+    position:absolute;
+    width: 336px;
+    height: 304px;
+    top: 283px;
+    left: 32px;
+}
+.contenedorParrafo{
+    position: absolute;
+    width: 336px;
+    height: 122px;
+    top: 619px;
+    left: 32px;
+    gap: 16px;
+    opacity: 0px;
+    text-align: center;
+}
+.contenedorParrafo h2{
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: #343A40;
+}
+.contenedorParrafo p{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #495057;
+}
+
+.contenedorCopiar{
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    top: 825px;
+    left: 32px;
+
+}
+.copiar{
+    width: 336px;
+    height: 67px;
+    left: 32px;
+    padding: 24px ;
+    gap: 8px;
+    border-radius: 24px ;
+    border: 1px solid #0A3871;
+    opacity: 0px;
+    background-color: #FFFFFF;
+
+    color: #0A3871 ;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;   
+    cursor: pointer;
+
+}
+
+.seccion2{
+    position:relative;
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    box-shadow: 
+    box-shadow  0px 24px 32px -8px  ;
+}
+ 
+.contenedorResultado{
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    top: 32px;
+    left: 32px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #495057;
+    border: 1px solid #FFFF;
+}  
+
+
+.contenedorResultado p{
+    color: #495057;
+    font-size: 24px;
+}
+.botonEncriptar:hover,
+.botonDesencriptar:hover,
+.copiar:hover {
+    transform: scale(0.97);
+    
+}
+
+.esconder{
+    display: none;
+}
+
+/* Media query para pantallas con un ancho máximo de 700px */
+@media (max-width: 688px) {
+    /* Ajustes generales */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contenedorCaja, .cajaBotones, .contenedorParrafo, .contenedorCopiar, .contenedorResultado {
+        width: 90%;
+        margin: 10px auto;
+        position: static; /* Cambia la posición a estática para evitar superposiciones */
+        padding-left: 0;
+        top: auto;
+    }
+
+    .cajaText {
+        font-size: 18px;
+        height: 180px; /* Reduce la altura para pantallas más pequeñas */
+    }
+
+    .contenedorParrafo h2 {
+        font-size: 18px;
+    }
+
+    .contenedorParrafo p, .contenedorResultado p {
+        font-size: 14px;
+    }
+
+    .botonEncriptar, .botonDesencriptar, .copiar {
+        width: 100%;
+        font-size: 14px;
+        padding: 16px;
+        margin: 10px 0; /* Añade margen para separar los botones */
+    }
+
+    .contenedorMuñeco {
+        display: none; /* Oculta el muñeco en pantallas pequeñas */
+    }
+
+    .seccion1, .seccion2 {
+        width: 100%;
+        padding: 20px 0; /* Añade un espaciado vertical */
+        box-shadow: none;
+        position: static; /* Cambia la posición a estática para evitar superposiciones */
+        left: 0;
+    }
+
+    header img.logo {
+        width: 80px;
+        height: 32px;
+    }
+
+    .alert {
+        width: 90%;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+}
+
+
+/* Media query para pantallas con un ancho máximo de 400px */
+@media (max-width: 375px) {
+    .cajaBotones {
+        flex-direction: column; /* Cambia la dirección del flexbox para que los botones se apilen */
+        gap: 10px; /* Añade un pequeño espacio entre los botones */
+    }
+
+    .botonEncriptar, .botonDesencriptar {
+        width: 100%; /* Asegura que los botones ocupen el ancho completo */
+        font-size: 14px; /* Ajusta el tamaño de la fuente */
+    }
+}
